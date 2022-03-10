@@ -9,11 +9,13 @@ public class CubeScaling : MonoBehaviour
     public float speed = 50f;
     public float backSpeed = 50f;
     private Vector3 tempScale;
+    private ParticleSystem cubeParticles;
 
     // Start is called before the first frame update
     void Start()
     {
         cubeRb = GetComponent<Rigidbody>();
+        cubeParticles.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -55,6 +57,3 @@ public class CubeScaling : MonoBehaviour
         }
     }
 }
-
-    
-
